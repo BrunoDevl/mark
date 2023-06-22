@@ -3,9 +3,9 @@
 :root {
     --headerclr: #6156F9;
     --mainclr: #ed358d;
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     outline: none;
@@ -14,14 +14,14 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-}
-
-html {
+  }
+  
+  html {
     font-size: 62.5%;
     overflow-x: hidden;
-}
+  }  
 
-.header {
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ html {
     left: 0;
     right: 0;
     z-index: 10000;
-}
+  }
 
 .header #logo img {
     width: 50px;
@@ -454,4 +454,3 @@ nav {
 .payment-button:hover {
     background-color: #00796B;
 }
-
