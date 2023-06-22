@@ -195,6 +195,29 @@
           });
         });
       </script>
+
+<!-- Agrega una clase "scroll-link" al enlace de información -->
+<a href="#quienes-somos" class="scroll-link">Informacion</a>
+    <script>
+// Espera a que el documento HTML esté completamente cargado
+document.addEventListener("DOMContentLoaded", function() {
+  // Captura todos los enlaces con la clase "scroll-link"
+  var scrollLinks = document.querySelectorAll(".scroll-link");
+
+  // Agrega un controlador de eventos para cada enlace
+  scrollLinks.forEach(function(link) {
+    link.addEventListener("click", function(event) {
+      event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+      var targetId = link.getAttribute("href"); // Obtiene el valor del atributo href
+      var targetElement = document.querySelector(targetId); // Busca el elemento de destino utilizando el valor del atributo href
+
+      // Desplázate hacia el elemento de destino utilizando el método scrollIntoView()
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+});
+      </script>
       
 </body>
 
